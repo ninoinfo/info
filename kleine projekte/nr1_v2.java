@@ -16,7 +16,7 @@ public class nr1_v2 {
         LocalDate nextBirthday = birthday.withYear(LocalDate.now().getYear());
         Period period = Period.between(birthday, today);
         Period untilNextBirthday = Period.between(today, nextBirthday);
-        int age = period.getYears() + 1;
+        int age = period.getYears();
 
         System.out.println("Hallo " + name + ", du bist " + period.getYears() + " Jahre, " + period.getMonths() + " Monate und " + period.getDays() + " Tage alt.");
         System.out.println("Es sind noch " + untilNextBirthday.getMonths() + " Monate und " + untilNextBirthday.getDays() + " Tage, bis du " + age + " Jahre alt bist!");
